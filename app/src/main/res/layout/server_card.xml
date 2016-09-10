@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/servers_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/server_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="200sp"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:hint="@android:string/untitled"
+            android:textStyle="bold"
+            android:lines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ipv4"
+            android:hint="xxx.xxx.xxx.xxx"
+            android:layout_marginLeft="8dp"
+            android:layout_alignTop="@id/server_name"
+            android:textSize="14sp"
+            android:lines="1"
+            android:layout_alignBaseline="@+id/server_name"
+            android:layout_toEndOf="@+id/server_name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/status"
+            android:hint="status"
+            android:textSize="14sp"
+            android:layout_alignParentEnd="true"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_alignTop="@+id/server_name"
+            android:layout_alignBaseline="@+id/server_name"
+            android:lines="1"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/disk_usage"
+            android:id="@+id/disk_usage_label"
+            android:layout_below="@+id/server_name"
+            android:layout_alignStart="@+id/server_name"
+            android:layout_marginTop="8sp"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/disk_usage"
+            android:layout_alignTop="@+id/disk_usage_label"
+            android:layout_alignBaseline="@+id/disk_usage_label"
+            android:layout_toEndOf="@id/disk_usage_label"
+            android:layout_marginLeft="5sp"
+            android:textSize="14sp"
+            android:hint="100%" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ram_usage"
+            android:textSize="14sp"
+            android:hint="100%"
+            android:layout_below="@+id/ram_usage_label"
+            android:layout_alignBaseline="@+id/ram_usage_label"
+            android:layout_marginLeft="5sp"
+            android:layout_toEndOf="@id/ram_usage_label" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ram_usage"
+            android:id="@+id/ram_usage_label"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_below="@+id/disk_usage_label"
+            android:layout_alignStart="@+id/disk_usage_label"
+            android:layout_marginTop="8sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/load_percentage"
+            android:textSize="14sp"
+            android:layout_alignTop="@+id/disk_usage"
+            android:layout_alignEnd="@+id/status"
+            android:hint="0%"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/load_percentage"
+            android:id="@+id/load_percentage_label"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_alignTop="@+id/load_percentage"
+            android:layout_toStartOf="@id/load_percentage"
+            android:layout_marginRight="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/availability"
+            android:id="@+id/availability_label"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginRight="8sp"
+            android:layout_alignBottom="@+id/ram_usage"
+            android:layout_alignStart="@+id/load_percentage_label" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/availability"
+            android:textSize="14sp"
+            android:hint="0%"
+            android:layout_alignTop="@+id/availability_label"
+            android:layout_alignEnd="@+id/load_percentage" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

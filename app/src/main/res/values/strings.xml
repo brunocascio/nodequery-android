@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Node Query</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="disk_usage">Disk Usage</string>
+    <string name="ram_usage">Ram Usage</string>
+    <string name="load_percentage">Load Percentage</string>
+    <string name="availability">Availability</string>
+</resources>

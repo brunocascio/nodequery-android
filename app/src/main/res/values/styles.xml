@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@style/FlatActionBar</item>
+        <item name="android:progressBarStyle">@style/ProgressBarStyle</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ProgressBarStyle" parent="Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressBackgroundTint">@android:color/white</item>
+        <item name="android:indeterminateTint">@color/colorPrimary</item>s
+        <item name="android:indeterminate">true</item>
+    </style>
+
+    <style name="FlatActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@drawable/background_splash</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+
+</resources>
